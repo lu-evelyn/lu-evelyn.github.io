@@ -1,0 +1,19 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+<div class="container page-head">
+  <p class="label numbered">{{ t.journal_no }}</p>
+  <h1 class="display small">{{ t.journal_title }} <em>/ {{ t.journal_sub }}</em></h1>
+</div>
+<div class="container archive">
+  {% include section-grid.html %}
+  {%- for s in t.sections %}
+  {%- assign key = s[0] %}
+  <section class="archive-section" id="{{ key }}">
+    <div class="archive-head">
+      <span class="mono num">0{{ forloop.index }}</span>
+      <h2>{{ s[1].name }}</h2>
+      <p class="desc">{{ s[1].desc }}</p>
+    </div>
+    {% include post-list.html section=key %}
+  </section>
+  {%- endfor %}
+</div>

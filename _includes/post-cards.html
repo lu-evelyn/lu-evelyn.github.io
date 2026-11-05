@@ -1,0 +1,24 @@
+{%- comment -%}
+文章卡片网格。用法：{% include post-cards.html limit=6 %}
+文章 front matter 填 image（图片路径）就显示封面，否则显示栏目色块。
+{%- endcomment -%}
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign items = site.posts | where: "lang", page.lang -%}
+{%- if include.limit -%}{%- assign items = items | slice: 0, include.limit -%}{%- endif -%}
+{%- if items.size > 0 %}
+<div class="cards">
+  {%- for post in items %}
+  <a class="card" href="{{ post.url | relative_url }}">
+    {%- if post.image %}
+    <img class="cover" src="{{ post.image | relative_url }}" alt="" loading="lazy">
+    {%- else %}
+    <div class="cover cover-{{ post.section }}"><span>{{ t.sections[post.section].name }}</span></div>
+    {%- endif %}
+    <p class="card-meta mono">{{ post.date | date: t.date_format }}<span class="tag">{{ t.sections[post.section].name }}</span></p>
+    <h3>{{ post.title }}</h3>
+  </a>
+  {%- endfor %}
+</div>
+{%- else %}
+<p class="empty">{{ t.empty }}</p>
+{%- endif %}

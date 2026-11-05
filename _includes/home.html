@@ -1,0 +1,59 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign now_data = site.data.now[page.lang] -%}
+{%- assign lang_posts = site.posts | where: "lang", page.lang -%}
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="kicker mono">{{ t.kicker }}</p>
+      <h1 class="display">{{ t.headline }}</h1>
+      <p class="bio">{{ t.bio }}</p>
+      <dl class="facts">
+        {%- for f in t.facts %}
+        <dt class="mono">{{ f[0] }}</dt><dd>{{ f[1] }}</dd>
+        {%- endfor %}
+      </dl>
+    </div>
+    <aside class="now-card">
+      <p class="label"><span class="accent">§</span> {{ t.now_label }}</p>
+      <ul>
+        {%- for row in t.now_rows %}
+        {%- assign key = row[0] %}
+        {%- assign v = now_data[key] %}
+        {%- if v != nil and v != "" %}
+        <li><span class="mono">{{ row[1] }}</span><span>{{ v }}</span></li>
+        {%- endif %}
+        {%- endfor %}
+      </ul>
+      <p class="now-foot mono">{{ t.now_updated }} <span class="stamp">{{ site.data.now.updated | date: t.date_format }}</span></p>
+    </aside>
+  </div>
+  <div class="container">
+    <p class="stats mono">
+      <span>{{ lang_posts.size }} {{ t.stats_posts }}</span>
+      <span>{{ t.stats_sections }}</span>
+      <span>{{ t.stats_langs }}</span>
+      <span>{{ t.kicker }}</span>
+    </p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="band-head">
+      <p class="label numbered">{{ t.journal_no }}</p>
+      <h2 class="band-title">{{ t.journal_title }} <em>/ {{ t.journal_sub }}</em></h2>
+      <a class="mono more" href="{{ t.posts_url | relative_url }}">{{ t.all_posts }}</a>
+    </div>
+    {% include post-cards.html limit=6 %}
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="band-head">
+      <p class="label numbered">{{ t.sections_no }}</p>
+      <h2 class="band-title">{{ t.sections_title }} <em>/ {{ t.sections_sub }}</em></h2>
+    </div>
+    {% include section-grid.html %}
+  </div>
+</section>

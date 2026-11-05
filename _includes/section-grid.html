@@ -1,0 +1,14 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- assign lang_posts = site.posts | where: "lang", page.lang -%}
+<div class="section-grid" id="sections">
+  {%- for s in t.sections %}
+  {%- assign key = s[0] %}
+  {%- assign n = lang_posts | where: "section", key | size %}
+  <a class="section-tile tile-{{ key }}" href="{{ t.posts_url | relative_url }}#{{ key }}">
+    <span class="mono num">0{{ forloop.index }}</span>
+    <strong>{{ s[1].name }}</strong>
+    <span class="desc">{{ s[1].desc }}</span>
+    <span class="mono count">{{ n }} {{ t.count_unit }}</span>
+  </a>
+  {%- endfor %}
+</div>

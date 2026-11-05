@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+{%- if page.lang == "en" -%}
+  {%- assign size = content | number_of_words -%}
+  {%- assign mins = size | divided_by: 220 | plus: 1 -%}
+{%- else -%}
+  {%- assign size = content | strip_html | strip_newlines | remove: " " | size -%}
+  {%- assign mins = size | divided_by: 400 | plus: 1 -%}
+{%- endif -%}
+<article class="post">
+  <header class="post-head">
+    <div class="container">
+      <p class="crumbs mono">
+        <a href="{{ t.home_url | relative_url }}">{{ t.site_title }}</a> /
+        <a href="{{ t.posts_url | relative_url }}">{{ t.posts }}</a>
+        {%- if page.section %} / <a href="{{ t.posts_url | relative_url }}#{{ page.section }}">{{ t.sections[page.section].name }}</a>{% endif %}
+      </p>
+      <p class="post-meta mono">{{ page.date | date: t.long_date }} <span class="rule"></span> {{ size }} {{ t.words_unit }} · {{ t.read_about }}{{ mins }} {{ t.minutes }}</p>
+      {%- if page.translation %}
+      <p class="lang-pills">
+        {%- if page.lang == "en" %}
+        <a class="pill" href="{{ page.translation | relative_url }}">中文</a><span class="pill active">English</span>
+        {%- else %}
+        <span class="pill active">中文</span><a class="pill" href="{{ page.translation | relative_url }}">English</a>
+        {%- endif %}
+      </p>
+      {%- endif %}
+      <h1 class="display post-title">{{ page.title }}</h1>
+    </div>
+  </header>
+  <div class="container post-grid">
+    <div class="prose">
+      {%- if page.image %}<img class="post-cover" src="{{ page.image | relative_url }}" alt="">{% endif %}
+      {{ content }}
+    </div>
+    <aside class="toc" hidden>
+      <p class="label"><span class="accent">{{ t.toc }}</span></p>
+      <ol></ol>
+    </aside>
+  </div>
+</article>
+<script>
+  // 用正文的二级标题生成右侧目录，少于两个标题就不显示
+  (function () {
+    var hs = document.querySelectorAll('.prose h2');
+    if (hs.length < 2) return;
+    var toc = document.querySelector('.toc'), ol = toc.querySelector('ol');
+    hs.forEach(function (h, i) {
+      if (!h.id) h.id = 's' + (i + 1);
+      var li = document.createElement('li'), a = document.createElement('a');
+      a.href = '#' + h.id; a.textContent = h.textContent;
+      li.appendChild(a); ol.appendChild(li);
+    });
+    toc.hidden = false;
+  })();
+</script>

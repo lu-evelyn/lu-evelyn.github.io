@@ -1,0 +1,102 @@
+# 界面文字。section 的 key 对应文章 front matter 里的 section 字段，顺序即栏目编号。
+zh:
+  site_title: 未来配置
+  tagline: 用 AI 搭系统，记录投资、教育和个人成长上的思考与实践。
+  home: 首页
+  posts: 文章
+  sections_nav: 栏目
+  about: 关于
+  switch_label: EN
+  switch_url: /en/
+  home_url: /
+  posts_url: /posts/
+  about_url: /about/
+  kicker: AI · 投资 · 教育
+  headline: 为未来做<em>配置</em>。
+  bio: Evelyn，投资人，用 AI 搭建自己的各类系统。记录在投资、教育和个人成长上的思考、实践，践行长期主义。
+  facts:
+    - [语言, 中文 · English]
+    - [节奏, 想清楚了再写]
+    - [始于, 2026]
+  now_label: 此刻
+  now_updated: 更新于
+  now_rows: { building: 在搭, thinking: 在想, reading: 在读, writing: 在写 }
+  stats_posts: 篇文章
+  stats_langs: 2 种语言
+  stats_sections: 4 个栏目
+  journal_no: § 01 · 文章
+  journal_title: 文章
+  journal_sub: 慢慢写，公开想
+  sections_no: § 02 · 栏目
+  sections_title: 栏目
+  sections_sub: 四个方向，一个问题
+  all_posts: 全部文章 →
+  count_unit: 篇
+  empty: 第一篇在路上。
+  toc: 本文目录
+  words_unit: 字
+  minutes: 分钟
+  read_about: 约
+  footer_blurb: 一个投资人的公开笔记。内容是个人思考与记录，不构成任何投资建议。
+  footer_read: 阅读
+  footer_more: 更多
+  footer_elsewhere: 别处
+  contact: 写信
+  date_format: "%Y-%m-%d"
+  long_date: "%Y 年 %-m 月 %-d 日"
+  sections:
+    ai: { name: AI, desc: 用 AI 搭建工作、生活及个人成长的各类系统，构建自己的第二大脑 }
+    investing: { name: 投资, desc: 资产配置的认知、框架与反例 }
+    education: { name: 教育, desc: AI 时代如何陪伴孩子成长 }
+    growth: { name: 个人成长, desc: 学习、复盘，建立持续探索、深度连接的生活体系 }
+
+en:
+  site_title: Allocating the Future
+  tagline: Building systems with AI. Notes on investing, education, and personal growth.
+  home: Home
+  posts: Writing
+  sections_nav: Sections
+  about: About
+  switch_label: 中文
+  switch_url: /
+  home_url: /en/
+  posts_url: /en/posts/
+  about_url: /en/about/
+  kicker: AI · Investing · Education
+  headline: Allocating for the <em>future</em>.
+  bio: Evelyn is an investor who builds her own systems with AI. Notes on the thinking and practice behind investing, education, and personal growth, with a long-term view.
+  facts:
+    - [Languages, 中文 · English]
+    - [Cadence, When it's thought through]
+    - [Since, 2026]
+  now_label: Now
+  now_updated: Updated
+  now_rows: { building: Building, thinking: Thinking, reading: Reading, writing: Writing }
+  stats_posts: pieces
+  stats_langs: 2 languages
+  stats_sections: 4 sections
+  journal_no: § 01 · Writing
+  journal_title: The notebook
+  journal_sub: thinking slowly, in public
+  sections_no: § 02 · Sections
+  sections_title: Sections
+  sections_sub: four directions, one question
+  all_posts: All writing →
+  count_unit: pieces
+  empty: The first piece is on its way.
+  toc: In this essay
+  words_unit: words
+  minutes: min
+  read_about: "~"
+  footer_blurb: Public notes from an investor. Personal thinking only. Nothing here is investment advice.
+  footer_read: Read
+  footer_more: More
+  footer_elsewhere: Elsewhere
+  contact: Write to me
+  date_format: "%b %-d, %Y"
+  long_date: "%-d %B %Y"
+  sections:
+    ai: { name: AI, desc: "Building AI systems for work, life, and personal growth, a second brain of my own" }
+    investing: { name: Investing, desc: "Asset allocation: frameworks, counterexamples, failure modes" }
+    education: { name: Education, desc: Growing up alongside our kids in the age of AI }
+    growth: { name: Growth, desc: "Learning, reflection, and a life built on ongoing exploration and deep connection" }

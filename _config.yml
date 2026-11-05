@@ -1,0 +1,49 @@
+# 站点基础配置。改品牌名、简介只需要改这里和 _data/i18n.yml。
+title: 未来配置
+description: 用 AI 搭系统，记录投资、教育和个人成长上的思考与实践。
+repository: lu-evelyn/lu-evelyn.github.io
+url: "https://lu-evelyn.github.io"
+baseurl: ""
+author: Evelyn Lu
+email: evelyn55771119@gmail.com
+lang: zh-CN
+encoding: utf-8
+timezone: Asia/Shanghai
+
+markdown: kramdown
+permalink: /posts/:year/:month/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  posts_limit: 30
+
+# 默认中文；en/ 目录和 lang: en 的文章走英文
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: zh
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: "en"
+    values:
+      lang: en
+
+exclude:
+  - README.md
+  - README.local.md
+  - AGENTS.md
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle

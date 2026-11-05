@@ -1,0 +1,61 @@
+{%- assign t = site.data.i18n[page.lang] -%}
+<!doctype html>
+<html lang="{% if page.lang == 'en' %}en{% else %}zh-CN{% endif %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo title=false %}
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ t.site_title }}</title>
+  <link rel="preload" href="{{ '/assets/fonts/newsreader.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="bar">
+      <div class="brand-group">
+        <a class="brand" href="{{ t.home_url | relative_url }}">{{ t.site_title }}</a>
+        <span class="mono handle">@lu-evelyn · {{ site.time | date: "%d.%m.%Y" }}</span>
+      </div>
+      <nav class="main-nav">
+        <a href="{{ t.posts_url | relative_url }}"{% if page.url contains '/posts/' %} class="active"{% endif %}>{{ t.posts }}</a>
+        <a href="{{ t.posts_url | relative_url }}#sections">{{ t.sections_nav }}</a>
+        <a href="{{ t.about_url | relative_url }}"{% if page.url contains '/about/' %} class="active"{% endif %}>{{ t.about }}</a>
+      </nav>
+      <a class="pill" href="{% if page.translation %}{{ page.translation | relative_url }}{% else %}{{ t.switch_url | relative_url }}{% endif %}">{{ t.switch_label }}</a>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">{{ t.site_title }}</p>
+        <p class="footer-blurb">{{ t.footer_blurb }}</p>
+      </div>
+      <div>
+        <p class="label">{{ t.footer_read }}</p>
+        <a href="{{ t.posts_url | relative_url }}">{{ t.posts }}</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </div>
+      <div>
+        <p class="label">{{ t.footer_more }}</p>
+        <a href="{{ t.about_url | relative_url }}">{{ t.about }}</a>
+        <a href="{{ t.switch_url | relative_url }}">{{ t.switch_label }}</a>
+      </div>
+      <div>
+        <p class="label">{{ t.footer_elsewhere }}</p>
+        <a href="mailto:{{ site.email }}">{{ t.contact }}</a>
+        <a href="https://github.com/lu-evelyn">GitHub</a>
+      </div>
+    </div>
+    <div class="container footer-bottom mono">
+      <span>© {{ site.time | date: "%Y" }} {{ site.author }}</span>
+      <span>{{ site.email }}</span>
+    </div>
+  </footer>
+</body>
+</html>
