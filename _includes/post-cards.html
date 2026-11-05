@@ -14,7 +14,7 @@
     {%- else %}
     <div class="cover cover-{{ post.section }}"><span>{{ t.sections[post.section].name }}</span></div>
     {%- endif %}
-    <p class="card-meta mono">{{ post.date | date: t.date_format }}<span class="tag">{{ t.sections[post.section].name }}</span></p>
+    <p class="card-meta mono">{{ post.date | date: t.date_format }}<span class="tag">{{ t.sections[post.section].name }}</span>{% if post.kind == "deepread" %}<span class="tag kind">{{ t.deepread }}</span>{% endif %}</p>
     <h3>{{ post.title }}</h3>
   </a>
   {%- endfor %}

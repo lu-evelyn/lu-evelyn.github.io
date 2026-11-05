@@ -34,6 +34,9 @@ zh:
   count_unit: 篇
   empty: 第一篇在路上。
   toc: 本文目录
+  deepread: 深读笔记
+  source_label: 原文
+  deepread_note: 转述原作者的观点和证据，引用与结论以原文为准。
   words_unit: 字
   minutes: 分钟
   read_about: 约
@@ -85,6 +88,9 @@ en:
   count_unit: pieces
   empty: The first piece is on its way.
   toc: In this essay
+  deepread: Reading notes
+  source_label: Original
+  deepread_note: A retelling of the author's argument and evidence. Refer to the original for quotes and conclusions.
   words_unit: words
   minutes: min
   read_about: "~"

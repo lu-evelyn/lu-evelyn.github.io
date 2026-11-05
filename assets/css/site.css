@@ -109,7 +109,16 @@ div.cover { display: flex; align-items: flex-end; padding: 18px 20px; font-famil
 .cover-education { background: var(--education); }
 .cover-growth { background: var(--growth); }
 .card-meta { display: flex; align-items: center; gap: 10px; margin: 14px 0 6px; }
-.tag { border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; letter-spacing: .08em; }
+.tag { border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; letter-spacing: .08em; white-space: nowrap; }
+.tag.kind { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.post-list .tag.kind { font-size: 10px; vertical-align: 3px; margin-left: 6px; }
+
+/* 深读笔记的原文信息框 */
+.source-box { border: 1px solid var(--line); border-left: 3px solid var(--accent); background: var(--panel); padding: 16px 20px; margin: 0 0 36px; }
+.source-box .label { margin-bottom: 8px; }
+.source-cite { font-family: var(--serif); font-size: 17px; line-height: 1.5; margin: 0 0 8px; }
+.source-foot { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; font-size: 13px; color: var(--muted); }
+.source-foot a { color: var(--accent); word-break: break-all; }
 .card h3 { font-family: var(--serif); font-weight: 400; font-size: 21px; line-height: 1.35; margin: 0; }
 .card:hover h3 { color: var(--link); }
 
@@ -165,6 +174,8 @@ main > .container:last-child { padding-bottom: 80px; }
 .prose blockquote { margin: 1.6em 0; padding: 0 0 0 22px; border-left: 2px solid var(--accent); color: var(--muted); font-family: var(--serif); font-style: italic; }
 .prose pre { overflow-x: auto; padding: 16px; background: var(--panel); border: 1px solid var(--line); font-size: 14px; line-height: 1.6; }
 .prose code { font-family: var(--mono); font-size: .88em; }
+/* 字符图里的中文：每个宽字符固定占两个英文字符宽，由 post.html 的脚本包成 .w */
+.prose pre .w { display: inline-block; text-align: center; }
 .prose table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: 15px; }
 .prose th, .prose td { border-bottom: 1px solid var(--line); padding: 8px 12px; text-align: left; }
 .prose hr { border: none; border-top: 1px solid var(--line); margin: 2.4em 0 1.6em; }

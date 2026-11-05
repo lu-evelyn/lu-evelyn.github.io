@@ -11,7 +11,7 @@
   {%- for post in items %}
   <li>
     <time>{{ post.date | date: t.date_format }}</time>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.kind == "deepread" %} <span class="mono tag kind">{{ t.deepread }}</span>{% endif %}
   </li>
   {%- endfor %}
 </ul>

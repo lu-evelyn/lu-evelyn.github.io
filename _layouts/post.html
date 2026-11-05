@@ -17,7 +17,7 @@ layout: default
         <a href="{{ t.posts_url | relative_url }}">{{ t.posts }}</a>
         {%- if page.section %} / <a href="{{ t.posts_url | relative_url }}#{{ page.section }}">{{ t.sections[page.section].name }}</a>{% endif %}
       </p>
-      <p class="post-meta mono">{{ page.date | date: t.long_date }} <span class="rule"></span> {{ size }} {{ t.words_unit }} · {{ t.read_about }}{{ mins }} {{ t.minutes }}</p>
+      <p class="post-meta mono">{% if page.kind == "deepread" %}<span class="tag kind">{{ t.deepread }}</span> {% endif %}{{ page.date | date: t.long_date }} <span class="rule"></span> {{ size }} {{ t.words_unit }} · {{ t.read_about }}{{ mins }} {{ t.minutes }}</p>
       {%- if page.translation %}
       <p class="lang-pills">
         {%- if page.lang == "en" %}
@@ -33,6 +33,14 @@ layout: default
   <div class="container post-grid">
     <div class="prose">
       {%- if page.image %}<img class="post-cover" src="{{ page.image | relative_url }}" alt="">{% endif %}
+      {%- if page.kind == "deepread" and page.source %}
+      {%- comment -%}深读笔记：front matter 填 source: {author, title, outlet, date, url}{%- endcomment -%}
+      <aside class="source-box">
+        <p class="label"><span class="accent">{{ t.deepread }}</span> · {{ t.source_label }}</p>
+        <p class="source-cite">{{ page.source.author }}{% if page.lang == "en" %}, “{{ page.source.title }}”{% else %}，《{{ page.source.title }}》{% endif %}{% if page.source.outlet %}{% if page.lang == "en" %}, {% else %}，{% endif %}<em>{{ page.source.outlet }}</em>{% endif %}{% if page.source.date %}{% if page.lang == "en" %}, {% else %}，{% endif %}{{ page.source.date }}{% endif %}</p>
+        <p class="source-foot"><a href="{{ page.source.url }}" rel="noopener">{{ page.source.url | remove: "https://" | truncate: 64 }} ↗</a><span>{{ t.deepread_note }}</span></p>
+      </aside>
+      {%- endif %}
       {{ content }}
     </div>
     <aside class="toc" hidden>
@@ -54,5 +62,14 @@ layout: default
       li.appendChild(a); ol.appendChild(li);
     });
     toc.hidden = false;
+  })();
+  // 字符图对齐：等宽字体里中文不是正好两格宽，把连续的中文和全角字符包成每字 2ch 的块
+  (function () {
+    var wide = /[ᄀ-ᅟ⺀-〾ぁ-㏿㐀-䶿一-鿿ꀀ-꓏가-힣豈-﫿︰-﹏＀-｠￠-￦]+/g;
+    document.querySelectorAll('.prose pre code').forEach(function (code) {
+      code.innerHTML = code.innerHTML.replace(wide, function (run) {
+        return '<span class="w" style="width:' + 2 * run.length + 'ch">' + run + '</span>';
+      });
+    });
   })();
 </script>
