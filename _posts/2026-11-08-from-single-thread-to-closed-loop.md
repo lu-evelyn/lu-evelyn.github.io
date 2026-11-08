@@ -2,6 +2,7 @@
 title: 从单线程到闭环——用AI搭建第二大脑
 lang: zh
 section: ai
+image: /assets/img/from-single-thread-to-closed-loop.jpg
 ---
 
 和 AI 协作久了，我越来越觉得，AI应该成为每个人的第二大脑——这是我们和AI合作的基石。
@@ -108,3 +109,5 @@ Q3 复盘发现很少用 → 提出「节奏错配」假设 → 10 月初改成�
 
 
 最适合自己的才是最好的。每个人都需要自己动手搭自己的第二大脑，让它适应你、适合你，成为你亲密无间的伙伴。会有惊喜发生的。
+
+<small>封面图来自 Corporea 互动人体博物馆的“[The Brain System](https://artsandculture.google.com/story/PQVxdHp5nUTNIg)”展览，Fondazione Idis - Città della Scienza，经 Google Arts & Culture。</small>
