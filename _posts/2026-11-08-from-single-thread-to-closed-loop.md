@@ -3,6 +3,7 @@ title: 从单线程到闭环——用AI搭建第二大脑
 lang: zh
 section: ai
 image: /assets/img/from-single-thread-to-closed-loop.jpg
+translation: /posts/2026/11/closing-the-loop-building-a-second-brain-with-ai/
 ---
 
 和 AI 协作久了，我越来越觉得，AI应该成为每个人的第二大脑——这是我们和AI合作的基石。
