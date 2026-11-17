@@ -5,7 +5,6 @@
   const svgNS = "http://www.w3.org/2000/svg";
   const language = document.documentElement.lang === "en" ? "en" : "zh";
   const world = map.querySelector(".world-map");
-  const overview = map.querySelector(".map-overview");
   const picker = map.querySelector(".map-picker select");
   const status = map.querySelector(".map-status");
   const dialog = map.querySelector(".country-dialog");
@@ -22,8 +21,6 @@
   let atlas;
   let visits;
   let scene;
-  let hoverTimer;
-  let hoverCountry;
   let openingControl;
   let drag;
 
@@ -139,10 +136,9 @@
     };
   }
 
-  const worldPopover = createPopover(overview);
   const countryPopover = createPopover(countryStage);
 
-  function visitMarker(x, y, visit, popover) {
+  function visitMarker(x, y, visit) {
     const marker = svg("g", {
       class: "map-visit",
       transform: `translate(${x} ${y})`,
@@ -154,7 +150,7 @@
       svg("circle", { r: 14, class: "visit-hit" }),
       svg("circle", { r: 6, class: "visit-dot" })
     );
-    popover.bind(marker, visit);
+    countryPopover.bind(marker, visit);
     return marker;
   }
 
@@ -179,7 +175,10 @@
       }
     }
     for (const visit of visits) {
-      world.append(visitMarker(...worldPoint(visit.lon, visit.lat), visit, worldPopover));
+      const [cx, cy] = worldPoint(visit.lon, visit.lat);
+      world.append(svg("circle", {
+        cx, cy, r: 4.5, class: "visit-dot", "data-country": visit.country
+      }));
     }
   }
 
@@ -235,7 +234,7 @@
       addLabel(...point, city.name, "reference-label");
     }
     for (const { visit, point } of visibleVisits) {
-      const marker = visitMarker(...point, visit, countryPopover);
+      const marker = visitMarker(...point, visit);
       scene.places.append(marker);
       scene.markers.set(visit, marker);
     }
@@ -247,7 +246,6 @@
     const country = atlas.countries.find(item => item.id === id);
     if (!country || dialog.open) return;
     openingControl = control;
-    worldPopover.hide();
     const project = localProjection(country);
     const outline = svg("path", { class: "map-land", d: pathData(country.rings, project) });
     const places = svg("g", {});
@@ -301,23 +299,7 @@
     drawCountry();
   }
 
-  function cancelHover() {
-    window.clearTimeout(hoverTimer);
-    hoverCountry = undefined;
-  }
-
-  world.addEventListener("pointermove", event => {
-    if (!atlas || dialog.open || event.pointerType !== "mouse" || event.buttons) return;
-    const id = event.target.closest("[data-country]")?.dataset.country;
-    if (hoverCountry === id) return;
-    cancelHover();
-    if (!id) return;
-    hoverCountry = id;
-    hoverTimer = window.setTimeout(() => openCountry(id), 430);
-  });
-  world.addEventListener("pointerleave", cancelHover);
   world.addEventListener("click", event => {
-    cancelHover();
     const id = event.target.closest("[data-country]")?.dataset.country;
     if (id) openCountry(id);
   });
@@ -326,7 +308,6 @@
   });
   dialog.querySelector(".map-back").addEventListener("click", () => dialog.close());
   dialog.addEventListener("close", () => {
-    cancelHover();
     countryPopover.hide();
     picker.value = "";
     scene = null;

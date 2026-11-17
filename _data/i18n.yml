@@ -39,7 +39,7 @@ zh:
   footprints_title: 足迹
   map_world: 世界地图
   map_country: 选择国家或地区
-  map_hint: 悬停或点按国家与地区可放大，悬停或点按到访标记可读笔记。
+  map_hint: 点按国家或地区可放大。放大后，悬停或点按到访标记可读笔记。
   map_loading: 正在加载地图…
   map_error: 地图暂时无法加载。刷新页面后可重试。
   map_back: ← 返回世界地图
@@ -113,7 +113,7 @@ en:
   footprints_title: Footprints
   map_world: World map
   map_country: Choose a country or region
-  map_hint: Hover over or tap a country or region to zoom in. Hover over or tap a visit marker to read the note.
+  map_hint: Select a country or region to zoom in. In the zoomed map, hover over or tap a visit marker to read the note.
   map_loading: Loading the map…
   map_error: The map could not load. Refresh the page to try again.
   map_back: ← Back to world map
