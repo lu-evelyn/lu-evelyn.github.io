@@ -1,0 +1,19 @@
+{%- assign notes = site.data.thoughts | sort: "date" | reverse -%}
+{%- assign shown = 0 -%}
+{%- capture cards -%}
+  {%- for note in notes %}
+  {%- assign body = note[page.lang] %}
+  {%- if body == nil or body == empty %}{% continue %}{% endif %}
+  <article class="thought-card">
+    <time class="mono" datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: t.date_format }}</time>
+    <p>{{ body | escape }}</p>
+  </article>
+  {%- assign shown = shown | plus: 1 %}
+  {%- if shown == include.limit %}{% break %}{% endif %}
+  {%- endfor %}
+{%- endcapture -%}
+{%- if shown > 0 -%}
+<div class="thought-cards">{{ cards }}</div>
+{%- else %}
+<p class="thought-empty">{{ t.thoughts_empty }}</p>
+{%- endif %}

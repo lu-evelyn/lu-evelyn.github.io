@@ -1,0 +1,48 @@
+<div class="footprint-map"
+     data-map-url="{{ '/assets/data/footprints-atlas.json' | relative_url }}"
+     data-visits="{{ site.data.footprints | jsonify | escape }}"
+     data-error="{{ t.map_error | escape }}"
+     data-pending="{{ t.map_pending | escape }}"
+     data-empty="{{ t.map_empty | escape }}">
+  <div class="map-toolbar">
+    <label class="map-picker">
+      <span class="mono">{{ t.map_country }}</span>
+      <select disabled>
+        <option value="">{{ t.map_world }}</option>
+      </select>
+    </label>
+    <p id="map-hint">{{ t.map_hint }}</p>
+  </div>
+  <div class="map-stage map-overview">
+    <svg class="world-map" viewBox="0 0 1000 508" aria-label="{{ t.map_world }}" aria-describedby="map-hint"></svg>
+    <p class="map-status" role="status">{{ t.map_loading }}</p>
+    <noscript><p class="map-status">{{ t.map_error }}</p></noscript>
+  </div>
+  <div class="map-caption">
+    <p class="map-legend"><span class="visit-key"></span>{{ t.map_visits }}</p>
+    <a class="mono" href="https://www.naturalearthdata.com/">Natural Earth</a>
+  </div>
+  {% if site.data.footprints.size == 0 %}<p class="map-empty">{{ t.map_empty }}</p>{% endif %}
+  <dialog class="country-dialog" aria-labelledby="map-country-name">
+    <header class="country-header">
+      <button class="map-button map-back" type="button" autofocus>{{ t.map_back }}</button>
+      <h3 id="map-country-name"></h3>
+      <div class="map-zoom">
+        <button class="map-button zoom-out" type="button" aria-label="{{ t.map_zoom_out }}" title="{{ t.map_zoom_out }}">−</button>
+        <button class="map-button zoom-in" type="button" aria-label="{{ t.map_zoom_in }}" title="{{ t.map_zoom_in }}">+</button>
+        <button class="map-button zoom-reset" type="button" aria-label="{{ t.map_reset }}" title="{{ t.map_reset }}">↺</button>
+      </div>
+    </header>
+    <div class="map-stage country-stage">
+      <svg class="country-map" role="group" aria-labelledby="map-country-name"></svg>
+    </div>
+    <div class="country-caption">
+      <p class="map-legend"><span class="reference-key"></span>{{ t.map_reference }}</p>
+      <div class="country-visits">
+        <p class="map-legend"><span class="visit-key"></span>{{ t.map_visits }}</p>
+        <ul class="visited-cities" aria-label="{{ t.map_visits }}"></ul>
+      </div>
+    </div>
+  </dialog>
+</div>
+<script src="{{ '/assets/js/footprints.js' | relative_url }}" defer></script>

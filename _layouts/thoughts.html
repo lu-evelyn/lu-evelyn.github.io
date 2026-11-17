@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{%- assign t = site.data.i18n[page.lang] -%}
+<div class="container page-head">
+  <p class="label numbered">{{ t.thoughts_no }}</p>
+  <h1 class="display small">{{ t.thoughts_title }}</h1>
+</div>
+<div class="container">
+  {% include thought-cards.html %}
+</div>

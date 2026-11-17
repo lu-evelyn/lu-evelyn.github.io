@@ -99,6 +99,75 @@ img { max-width: 100%; display: block; }
 .band-title em, .display.small em { font-style: italic; color: var(--muted); font-size: .85em; }
 .more { color: var(--fg); }
 
+/* 思考记录 */
+.thought-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.thought-card { padding: 23px 24px; background: var(--panel); border: 1px solid var(--line); border-top: 2px solid var(--accent); }
+.thought-card time { color: var(--link); }
+.thought-card p { font-family: var(--serif); font-size: 18px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; margin: 12px 0 0; }
+.thought-empty { color: var(--muted); margin: 0; }
+
+/* 足迹 */
+#footprints { scroll-margin-top: 64px; }
+.footprint-map {
+  --water: color-mix(in srgb, var(--panel) 94%, var(--link));
+  --land: color-mix(in srgb, var(--panel) 85%, var(--link));
+  --boundary: color-mix(in srgb, var(--panel) 59%, var(--link));
+  --graticule: color-mix(in srgb, var(--water) 90%, var(--link));
+  --map-accent: var(--accent);
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+.map-toolbar, .map-caption, .country-caption { display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 12px 20px; }
+.map-toolbar p, .map-caption p, .country-caption p { margin: 0; }
+.map-toolbar p, .map-empty { color: var(--muted); font-size: 13px; }
+.map-picker { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; }
+.map-picker select, .map-button { font: inherit; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-radius: 3px; }
+.map-picker select { min-width: 150px; max-width: 100%; padding: 5px 9px; font-size: 14px; }
+.map-button { padding: 6px 10px; cursor: pointer; font-size: 13px; }
+.map-button:enabled:hover { border-color: var(--link); color: var(--link); }
+.map-button:disabled { opacity: .45; cursor: default; }
+.map-stage { position: relative; background: var(--water); overflow: hidden; }
+.map-overview { border-block: 1px solid var(--line); }
+.world-map { display: block; width: 100%; height: auto; }
+.map-graticule { fill: none; stroke: var(--graticule); stroke-width: 1; pointer-events: none; }
+.map-land { fill: var(--land); stroke: var(--boundary); stroke-width: .65; fill-rule: evenodd; vector-effect: non-scaling-stroke; }
+.world-map .map-land { cursor: zoom-in; }
+.world-map .map-land:hover { fill: color-mix(in srgb, var(--land) 77%, var(--map-accent)); stroke: var(--map-accent); }
+.map-small-area { fill: var(--boundary); }
+.map-status { position: absolute; inset: 0; align-content: center; text-align: center; margin: 0; padding: 16px; color: var(--muted); }
+.map-legend { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--muted); }
+.visit-key, .reference-key { border-radius: 50%; background: var(--map-accent); width: 8px; height: 8px; flex: none; }
+.reference-key { background: var(--link); width: 5px; height: 5px; }
+.map-caption a:hover { color: var(--link); text-decoration: underline; }
+.map-empty { padding: 0 20px; margin: 0 0 14px; }
+.map-visit { cursor: pointer; outline: none; }
+.visit-hit { fill: transparent; }
+.visit-dot { fill: var(--map-accent); stroke: var(--panel); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.world-map .visit-dot { r: 4.5; }
+.map-visit:hover .visit-dot, .map-visit:focus-visible .visit-dot { stroke: var(--fg); stroke-width: 2.5; }
+.map-popover { position: absolute; z-index: 1; width: min(300px, calc(100% - 16px)); max-height: calc(100% - 16px); overflow: auto; padding: 12px 16px; color: var(--fg); background: var(--panel); border: 1px solid var(--line); border-top: 2px solid var(--map-accent); box-shadow: 0 6px 22px #0002; }
+.map-popover strong { font-family: var(--serif); font-size: 19px; font-weight: 500; }
+.map-popover p { margin: 4px 0 0; font-size: 14px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+body:has(.country-dialog[open]) { overflow: hidden; }
+.country-dialog { border: 0; background: var(--panel); color: var(--fg); width: 100%; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; }
+.country-dialog[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; }
+.country-header { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; padding: 12px 24px; border-bottom: 1px solid var(--line); }
+.country-header h3 { font: 400 clamp(24px, 4vw, 40px)/1.12 var(--serif); text-align: center; margin: 0; }
+.map-back { justify-self: start; }
+.map-zoom { display: flex; justify-content: end; gap: 6px; }
+.map-zoom .map-button { min-width: 38px; font-size: 18px; line-height: 1.2; }
+.country-map { display: block; width: 100%; height: 100%; touch-action: none; }
+.country-map .map-land { stroke-width: 1; }
+.country-map:active { cursor: grabbing; }
+.country-caption { justify-content: start; flex-wrap: wrap; border-top: 1px solid var(--line); }
+.country-visits { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.visited-cities { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; list-style: none; max-height: 12vh; overflow: auto; margin: 0; padding: 0 2px; color: var(--muted); font-size: 13px; }
+.visited-cities .map-button { padding: 2px 8px; }
+.reference-city { fill: var(--link); }
+.reference-label, .visited-label { fill: var(--fg); stroke: var(--water); stroke-width: 3px; stroke-linejoin: round; paint-order: stroke; font: 12px var(--sans); pointer-events: none; }
+.visited-label { fill: var(--map-accent); font-weight: 600; font-size: 14px; }
+
 /* 文章卡片 */
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px 24px; }
 .card { display: block; }
@@ -204,14 +273,19 @@ main > .container:last-child { padding-bottom: 80px; }
   .toc { display: none; }
   .band-head { grid-template-columns: 1fr auto; }
   .band-head .numbered { grid-column: 1 / -1; }
+  .thought-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 840px) {
+  .bar { grid-template-columns: 1fr auto; height: auto; padding-top: 12px; padding-bottom: 12px; row-gap: 8px; }
+  .handle { display: none; }
+  .main-nav { grid-column: 1 / -1; grid-row: 2; gap: 3px 16px; flex-wrap: wrap; }
+  #footprints { scroll-margin-top: 112px; }
 }
 
 /* 手机 */
 @media (max-width: 600px) {
   .container, .bar { padding-left: 16px; padding-right: 16px; }
-  .bar { grid-template-columns: 1fr auto; height: auto; padding-top: 12px; padding-bottom: 12px; row-gap: 8px; }
-  .handle { display: none; }
-  .main-nav { grid-column: 1 / -1; grid-row: 2; gap: 20px; }
   .hero { padding-top: 40px; }
   .facts { grid-template-columns: 84px 1fr; }
   .now-card { padding: 18px 20px; }
@@ -219,6 +293,12 @@ main > .container:last-child { padding-bottom: 80px; }
   .band { padding: 56px 0; }
   .band-title { font-size: 26px; }
   .cards { grid-template-columns: 1fr; }
+  .thought-cards { grid-template-columns: 1fr; }
+  .map-toolbar { align-items: start; flex-direction: column; }
+  .map-toolbar, .map-caption, .country-caption { padding: 10px 12px; }
+  .map-empty { padding: 0 12px; }
+  .country-header { grid-template-columns: 1fr auto; padding: 10px 12px; }
+  .country-header h3 { grid-row: 2; grid-column: 1 / -1; text-align: left; }
   .section-grid { grid-template-columns: 1fr; }
   .section-tile { border-left: none; border-top: 1px solid var(--line); min-height: 0; }
   .section-tile:first-child { border-top: none; }

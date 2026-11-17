@@ -18,8 +18,10 @@
         <span class="mono handle">@lu-evelyn · {{ site.time | date: "%d.%m.%Y" }}</span>
       </div>
       <nav class="main-nav">
+        <a href="{{ t.thoughts_url | relative_url }}"{% if page.url == t.thoughts_url %} class="active" aria-current="page"{% endif %}>{{ t.thoughts_title }}</a>
         <a href="{{ t.posts_url | relative_url }}"{% if page.url contains '/posts/' %} class="active"{% endif %}>{{ t.posts }}</a>
         <a href="{{ t.posts_url | relative_url }}#sections">{{ t.sections_nav }}</a>
+        <a href="{{ t.home_url | relative_url }}#footprints">{{ t.footprints_title }}</a>
         <a href="{{ t.about_url | relative_url }}"{% if page.url contains '/about/' %} class="active"{% endif %}>{{ t.about }}</a>
       </nav>
       <a class="pill" href="{% if page.translation %}{{ page.translation | relative_url }}{% else %}{{ t.switch_url | relative_url }}{% endif %}">{{ t.switch_label }}</a>
@@ -38,11 +40,13 @@
       </div>
       <div>
         <p class="label">{{ t.footer_read }}</p>
+        <a href="{{ t.thoughts_url | relative_url }}">{{ t.thoughts_title }}</a>
         <a href="{{ t.posts_url | relative_url }}">{{ t.posts }}</a>
         <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
       </div>
       <div>
         <p class="label">{{ t.footer_more }}</p>
+        <a href="{{ t.home_url | relative_url }}#footprints">{{ t.footprints_title }}</a>
         <a href="{{ t.about_url | relative_url }}">{{ t.about }}</a>
         <a href="{{ t.switch_url | relative_url }}">{{ t.switch_label }}</a>
       </div>

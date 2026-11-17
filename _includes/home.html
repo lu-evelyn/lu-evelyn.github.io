@@ -20,7 +20,7 @@
         {%- assign key = row[0] %}
         {%- assign v = now_data[key] %}
         {%- if v != nil and v != "" %}
-        <li><span class="mono">{{ row[1] }}</span><span>{{ v }}</span></li>
+        <li><span class="mono">{{ row[1] }}</span><span>{{ v | escape }}</span></li>
         {%- endif %}
         {%- endfor %}
       </ul>
@@ -34,6 +34,17 @@
       <span>{{ t.stats_langs }}</span>
       <span>{{ t.kicker }}</span>
     </p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <div class="band-head">
+      <p class="label numbered">{{ t.thoughts_no }}</p>
+      <h2 class="band-title">{{ t.thoughts_title }}</h2>
+      <a class="mono more" href="{{ t.thoughts_url | relative_url }}">{{ t.thoughts_all }}</a>
+    </div>
+    {% include thought-cards.html limit=3 %}
   </div>
 </section>
 
@@ -55,5 +66,15 @@
       <h2 class="band-title">{{ t.sections_title }} <em>/ {{ t.sections_sub }}</em></h2>
     </div>
     {% include section-grid.html %}
+  </div>
+</section>
+
+<section class="band" id="footprints">
+  <div class="container">
+    <div class="band-head">
+      <p class="label numbered">{{ t.footprints_no }}</p>
+      <h2 class="band-title" id="footprints-title">{{ t.footprints_title }}</h2>
+    </div>
+    {% include footprints.html %}
   </div>
 </section>

@@ -24,12 +24,32 @@ zh:
   stats_posts: 篇文章
   stats_langs: 2 种语言
   stats_sections: 4 个栏目
-  journal_no: § 01 · 文章
+  thoughts_no: § 01 · 思考记录
+  thoughts_title: 思考记录
+  thoughts_url: /thoughts/
+  thoughts_all: 全部记录 →
+  thoughts_empty: 第一条思考记录还在路上。
+  journal_no: § 02 · 文章
   journal_title: 文章
   journal_sub: 慢慢写，公开想
-  sections_no: § 02 · 栏目
+  sections_no: § 03 · 栏目
   sections_title: 栏目
   sections_sub: 四个方向，一个问题
+  footprints_no: § 04 · 足迹
+  footprints_title: 足迹
+  map_world: 世界地图
+  map_country: 选择国家或地区
+  map_hint: 悬停或点按国家与地区可放大，点按城市标记可读到访笔记。
+  map_loading: 正在加载地图…
+  map_error: 地图暂时无法加载。刷新页面后可重试。
+  map_back: ← 返回世界地图
+  map_empty: 还没有标记到访的城市。
+  map_pending: 城市感受待补充。
+  map_visits: 到访城市
+  map_reference: 参考城市
+  map_zoom_in: 放大地图
+  map_zoom_out: 缩小地图
+  map_reset: 重置视图
   all_posts: 全部文章 →
   count_unit: 篇
   empty: 第一篇在路上。
@@ -78,12 +98,32 @@ en:
   stats_posts: pieces
   stats_langs: 2 languages
   stats_sections: 4 sections
-  journal_no: § 01 · Writing
+  thoughts_no: § 01 · Thinking notes
+  thoughts_title: Thinking notes
+  thoughts_url: /en/thoughts/
+  thoughts_all: All notes →
+  thoughts_empty: The first note is on its way.
+  journal_no: § 02 · Writing
   journal_title: The notebook
   journal_sub: thinking slowly, in public
-  sections_no: § 02 · Sections
+  sections_no: § 03 · Sections
   sections_title: Sections
   sections_sub: four directions, one question
+  footprints_no: § 04 · Footprints
+  footprints_title: Footprints
+  map_world: World map
+  map_country: Choose a country or region
+  map_hint: Hover over or tap a country or region to zoom in. Select a city marker to read the visit note.
+  map_loading: Loading the map…
+  map_error: The map could not load. Refresh the page to try again.
+  map_back: ← Back to world map
+  map_empty: No visited cities have been marked yet.
+  map_pending: A note about this city is still to come.
+  map_visits: Visited cities
+  map_reference: Reference cities
+  map_zoom_in: Zoom in
+  map_zoom_out: Zoom out
+  map_reset: Reset view
   all_posts: All writing →
   count_unit: pieces
   empty: The first piece is on its way.
