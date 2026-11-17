@@ -1,3 +1,233 @@
 # 每项包含 country（footprints-atlas.json 里的国家或地区 id）、lon、lat，
 # 以及 zh: {city, note}、en: {city, note}。没有感受时 note 留空。
-[]
+# 只有地区名时，坐标为地区级标记。
+- country: SGP
+  lon: 103.8539
+  lat: 1.295
+  zh:
+    city: 新加坡
+    note: |-
+      南洋理工和新加坡国立都很漂亮，铺满青草的坡地波浪起伏，校园像生长在山间一样。
+
+      城市的街道很干净整洁，散步的时候看到一中鸡妈妈带着一排小鸡过马路，太有趣了！
+
+      但，是美食荒漠......so sad
+  en: { city: Singapore, note: "" }
+- country: USA
+  lon: -122.1706
+  lat: 37.4275
+  zh:
+    city: 美国加州
+    note: |-
+      stanford，硅谷，berkeley
+
+      很美好的经历，和一群小伙伴一起。
+
+      超喜欢stanford松饼+草莓酱！
+  en: { city: California, note: "" }
+- country: THA
+  lon: 100.5147
+  lat: 13.7519
+  zh:
+    city: 曼谷
+    note: |-
+      有点混乱又迷人的城市，多元，错落。
+
+      有一家超级好吃的贝果店，记忆犹新！
+  en: { city: Bangkok, note: "" }
+- country: MYS
+  lon: 113.84
+  lat: 2.53
+  zh:
+    city: 马来西亚
+    note: |-
+      去了当地人推荐的榴莲大排档，吃了三种榴莲，微苦而清甜，不会腻，太好吃了！
+
+      住的酒店很漂亮，可惜二哈看错了时间，只定了一晚......
+  en: { city: Malaysia, note: "" }
+- country: KOR
+  lon: 126.53
+  lat: 33.36
+  zh:
+    city: 济州岛
+    note: |-
+      和爸爸妈妈的一次旅行。回忆起来，整座城市感觉清清淡淡的，海水也是淡淡的蓝色。
+
+      途中发生了一些小摩擦，跟妈妈发生了争执。那个时候她的控制欲比较强，让我很不舒服。现在我有了自己的孩子，我会给他足够的自由和尊重，希望我们会是很好的朋友吧。
+  en: { city: Jeju Island, note: "" }
+- country: KHM
+  lon: 104.9147
+  lat: 11.552
+  zh:
+    city: 金边
+    note: |-
+      一个极致分化的城市。距离奢侈品商场开车十几分钟就是红灯区和脏乱差的小摊。
+
+      在顶楼的露天酒吧里看夜景，一个帅帅的男生在唱yellow，很好听。
+
+      那时我正处于产后抑郁和工作受挫的低谷，这趟旅程由于二哈很忙没有给我太多陪伴，并没有治愈我。好在现在我走出来了，给自己鼓掌hh
+  en: { city: Phnom Penh, note: "" }
+- country: KHM
+  lon: 103.85
+  lat: 13.3666
+  zh:
+    city: 暹粒
+    note: |-
+      吴哥窟很震撼。看着石壁上栩栩如生的雕刻，还有树根铺满整面墙、延伸一条街的大树，我是敬畏的。
+
+      回来以后我买了一套世界史，想要知道这里，还有许多其他地方，都发生过什么。
+
+      这里真的能让人感到历史的厚重感。
+  en: { city: Siem Reap, note: "" }
+- country: TWN
+  lon: 120.87
+  lat: 23.65
+  zh:
+    city: 台湾
+    note: |-
+      一次跟团游，没有玩尽兴，回来以后就觉得以后还是要自己去。跟团的商业性质还是太重了些。
+
+      爸爸给我买了一根小蝴蝶项链，最近搬家还找了出来，保存着。
+  en: { city: Taiwan, note: "" }
+- country: HKG
+  lon: 114.1831
+  lat: 22.3069
+  zh:
+    city: 香港
+    note: |-
+      吃了很多好吃的，有韩式米其林，有好吃的日料，有半山腰的蛋挞，是我喜欢的地方。
+
+      坚尼地城的海太漂亮了，是清清澈澈的蓝。
+
+      去洗手间要跟服务员要卡，刷卡才能进，当时大为震撼hh
+
+      遗憾的是当时的自己还没有在一个很好的状态里。以后要再去一次。
+  en: { city: Hong Kong, note: "" }
+- country: CHN
+  lon: 100.3003
+  lat: 25.6811
+  zh:
+    city: 大理
+    note: |-
+      是拍婚纱照去的地方，朋友结婚又去了一次。苍山洱海很美呀，是可以去很多次的地方。
+  en: { city: Dali, note: "" }
+- country: CHN
+  lon: 118.778
+  lat: 32.052
+  zh:
+    city: 南京
+    note: |-
+      气质跟北京有点像，都是zz中心。但物价更友好，有很多便宜但好吃的小吃。
+
+      玄武湖挺漂亮的，晚上约朋友走了一圈，有很多自带音箱唱歌的年轻人，热热闹闹的。
+  en: { city: Nanjing, note: "" }
+- country: CHN
+  lon: 120.3281
+  lat: 36.0919
+  zh:
+    city: 青岛
+    note: |-
+      冬季去的，是淡季，体验很不错。
+  en: { city: Qingdao, note: "" }
+- country: CHN
+  lon: 106.593
+  lat: 29.5669
+  zh:
+    city: 重庆
+    note: |-
+      可能人多加上选的地点不太好，觉得一般般。有机会再去看看。
+  en: { city: Chongqing, note: "" }
+- country: CHN
+  lon: 112.9681
+  lat: 28.2019
+  zh:
+    city: 长沙
+    note: |-
+      慢悠悠的城市，又很有烟火气，吃了文和友小龙虾。
+  en: { city: Changsha, note: "" }
+- country: CHN
+  lon: 104.0681
+  lat: 30.6719
+  zh:
+    city: 成都
+    note: |-
+      最难忘的是在无边泳池看雾凇！虽然上岸以后懂得瑟瑟发抖，但依然觉得很值得！
+
+      去夜店蹦迪，到了12点表演才开始高潮，我俩已经困了hh
+  en: { city: Chengdu, note: "" }
+- country: CHN
+  lon: 109.71
+  lat: 19.18
+  zh:
+    city: 海南
+    note: |-
+      漂漂亮亮的海岛。十几块钱一盘的虾，新鲜清甜，不愧是靠海吃海。
+  en: { city: Hainan, note: "" }
+- country: CHN
+  lon: 121.4208
+  lat: 28.6557
+  zh:
+    city: 台州
+    note: |-
+      印象已经不深了，似乎是个藏富于民的城市，有机会再去一次。
+  en: { city: Taizhou, note: "" }
+- country: CHN
+  lon: 117.1966
+  lat: 39.0828
+  zh:
+    city: 天津
+    note: |-
+      舒服悠闲的城市，有很多美好的回忆。
+  en: { city: Tianjin, note: "" }
+- country: CHN
+  lon: 120.1681
+  lat: 30.2519
+  zh:
+    city: 杭州
+    note: |-
+      有活力的城市，挺漂亮的。逛街还买到了喜欢的盘子。
+  en: { city: Hangzhou, note: "" }
+- country: CHN
+  lon: 116.3942
+  lat: 39.9017
+  zh:
+    city: 北京
+    note: |-
+      秋天是最美的，我发现11月中旬基本就是秋天的peak，走在哪儿都觉得很美。
+  en: { city: Beijing, note: "" }
+- country: CHN
+  lon: 121.4346
+  lat: 31.2184
+  zh:
+    city: 上海
+    note: |-
+      美食之都，我喜欢。
+  en: { city: Shanghai, note: "" }
+- country: CHN
+  lon: 113.2618
+  lat: 23.1247
+  zh:
+    city: 广州
+    note: |-
+      太好吃了，生蚝火锅很难忘。一定要多去几次。
+  en: { city: Guangzhou, note: "" }
+- country: CHN
+  lon: 114.0611
+  lat: 22.5481
+  zh:
+    city: 深圳
+    note: |-
+      地理面积小所以交通很方便，温暖的气候，整洁的街区，我也蛮喜欢的。
+  en: { city: Shenzhen, note: "" }
+- country: CHN
+  lon: 121.5481
+  lat: 29.8819
+  zh:
+    city: 宁波
+    note: |-
+      第一次一个人而且非常享受的旅行。
+
+      小小的城市，基本走着都能探完；有一条河贯穿着整个城市，空气湿湿的；吃到的很多好吃的，缸鸭狗的薄皮馄饨，醉蟹，超好吃的舒芙蕾，还有很多好看的咖啡厅和面包店。
+
+      宁海也很美，酒店建在山谷里，起床就是满眼青绿。还有个小姐姐帮我拍了旅拍照，我很喜欢。
+  en: { city: Ningbo, note: "" }

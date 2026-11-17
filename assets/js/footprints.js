@@ -92,6 +92,7 @@
       pinned = pinned || pin;
       title.textContent = visit.city;
       text.textContent = visit.note || map.dataset.pending;
+      text.lang = visit.note ? visit.noteLanguage : language;
       popover.hidden = false;
       const box = stage.getBoundingClientRect();
       const anchor = marker.getBoundingClientRect();
@@ -363,9 +364,17 @@
     const response = await fetch(map.dataset.mapUrl);
     if (!response.ok) throw new Error("Unable to load the footprint atlas");
     atlas = await response.json();
-    visits = JSON.parse(map.dataset.visits).map(entry => ({
-      ...entry, ...(entry[language] || entry.zh || entry.en)
-    }));
+    const otherLanguage = language === "en" ? "zh" : "en";
+    visits = JSON.parse(map.dataset.visits).map(entry => {
+      const localized = entry[language];
+      const noteLanguage = localized?.note ? language : otherLanguage;
+      return {
+        ...entry,
+        city: (localized || entry[otherLanguage]).city,
+        note: entry[noteLanguage]?.note,
+        noteLanguage
+      };
+    });
     const countries = [...atlas.countries].sort((a, b) => a[language].localeCompare(b[language], language));
     showWorld(countries);
     for (const country of countries) picker.add(new Option(country[language], country.id));
