@@ -29,6 +29,7 @@ zh:
   thoughts_url: /thoughts/
   thoughts_all: 全部记录 →
   thoughts_empty: 第一条思考记录还在路上。
+  thoughts_turn: 翻页
   journal_no: § 02 · 文章
   journal_title: 文章
   journal_sub: 慢慢写，公开想
@@ -103,6 +104,7 @@ en:
   thoughts_url: /en/thoughts/
   thoughts_all: All notes →
   thoughts_empty: The first note is on its way.
+  thoughts_turn: Turn page
   journal_no: § 02 · Writing
   journal_title: The notebook
   journal_sub: thinking slowly, in public

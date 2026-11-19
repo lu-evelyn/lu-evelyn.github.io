@@ -44,7 +44,7 @@
       <h2 class="band-title">{{ t.thoughts_title }}</h2>
       <a class="mono more" href="{{ t.thoughts_url | relative_url }}">{{ t.thoughts_all }}</a>
     </div>
-    {% include thought-cards.html limit=3 %}
+    {% include thought-cards.html limit=3 booklet=true %}
   </div>
 </section>
 

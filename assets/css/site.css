@@ -100,11 +100,66 @@ img { max-width: 100%; display: block; }
 .more { color: var(--fg); }
 
 /* 思考记录 */
-.thought-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.thought-card { padding: 23px 24px; background: var(--panel); border: 1px solid var(--line); border-top: 2px solid var(--accent); }
-.thought-card time { color: var(--link); }
-.thought-card p { font-family: var(--serif); font-size: 18px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; margin: 12px 0 0; }
+.thought-cards { display: grid; gap: 16px; }
+.thought-card {
+  display: grid;
+  grid-template-columns: minmax(8.5rem, 13%) minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+  padding: 28px 32px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 3px;
+}
+.thought-card time { color: var(--link); font-size: 12px; letter-spacing: .06em; padding-top: 4px; }
+.thought-entries { max-width: 72ch; }
+.thought-card p { font-family: var(--serif); font-size: 18px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
+.thought-card p + p { margin-top: 22px; padding-top: 22px; border-top: 1px dashed var(--line); }
 .thought-empty { color: var(--muted); margin: 0; }
+
+.thought-book.is-ready { margin-inline-end: 13px; }
+.thought-book.is-ready .thought-cards { position: relative; isolation: isolate; perspective: 1400px; }
+.thought-book.is-ready .thought-cards::before,
+.thought-book.is-ready .thought-cards::after {
+  content: "";
+  position: absolute;
+  background: var(--panel);
+  border: 1px solid color-mix(in srgb, var(--line), var(--muted) 20%);
+  border-radius: 3px;
+  pointer-events: none;
+}
+.thought-book.is-ready .thought-cards::before { z-index: -2; inset: 7px -13px -9px 13px; }
+.thought-book.is-ready .thought-cards::after { z-index: -1; inset: 3px -7px -5px 7px; }
+.thought-book.is-ready .thought-card {
+  min-height: 220px;
+  border-color: color-mix(in srgb, var(--line), var(--muted) 20%);
+  border-inline-start-color: var(--accent);
+  background-image: linear-gradient(to right, color-mix(in srgb, var(--accent) 6%, transparent), transparent 22px);
+  transform-origin: left center;
+  cursor: pointer;
+}
+.thought-book [hidden] { display: none; }
+.thought-book-turn {
+  position: absolute;
+  inset: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 3px;
+  pointer-events: none;
+}
+.thought-book-turn:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+.thought-book-status { margin: 23px 0 0; text-align: center; }
+@media (prefers-reduced-motion: no-preference) {
+  .thought-book[data-turn="forward"] { --page-angle: 22deg; }
+  .thought-book[data-turn="backward"] { --page-angle: -22deg; }
+  .thought-book[data-turn]:not([data-turn=""]) .thought-card:not([hidden]) { animation: thought-turn 320ms ease-out; }
+  @keyframes thought-turn {
+    from { transform: rotateY(var(--page-angle)); }
+    to { transform: rotateY(0); }
+  }
+}
 
 /* 足迹 */
 #footprints { scroll-margin-top: 64px; }
@@ -273,7 +328,6 @@ main > .container:last-child { padding-bottom: 80px; }
   .toc { display: none; }
   .band-head { grid-template-columns: 1fr auto; }
   .band-head .numbered { grid-column: 1 / -1; }
-  .thought-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 840px) {
@@ -293,7 +347,8 @@ main > .container:last-child { padding-bottom: 80px; }
   .band { padding: 56px 0; }
   .band-title { font-size: 26px; }
   .cards { grid-template-columns: 1fr; }
-  .thought-cards { grid-template-columns: 1fr; }
+  .thought-card { grid-template-columns: 1fr; gap: 10px; padding: 18px 20px; }
+  .thought-card time { padding-top: 0; }
   .map-toolbar { align-items: start; flex-direction: column; }
   .map-toolbar, .map-caption, .country-caption { padding: 10px 12px; }
   .map-empty { padding: 0 12px; }

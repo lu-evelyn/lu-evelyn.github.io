@@ -1,19 +1,35 @@
-{%- assign notes = site.data.thoughts | sort: "date" | reverse -%}
+{%- assign days = site.data.thoughts | sort: "date" | reverse | group_by: "date" -%}
 {%- assign shown = 0 -%}
 {%- capture cards -%}
-  {%- for note in notes %}
-  {%- assign body = note[page.lang] %}
-  {%- if body == nil or body == empty %}{% continue %}{% endif %}
+  {%- for day in days %}
+  {%- capture entries -%}
+    {%- for note in day.items -%}
+      {%- assign body = note[page.lang] -%}
+      {%- if body != nil and body != empty -%}
+      <p>{{ body | escape }}</p>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if entries == empty %}{% continue %}{% endif %}
   <article class="thought-card">
-    <time class="mono" datetime="{{ note.date | date: '%Y-%m-%d' }}">{{ note.date | date: t.date_format }}</time>
-    <p>{{ body | escape }}</p>
+    <time class="mono" datetime="{{ day.name | date: '%Y-%m-%d' }}">{{ day.name | date: t.date_format }}</time>
+    <div class="thought-entries">{{ entries }}</div>
   </article>
   {%- assign shown = shown | plus: 1 %}
   {%- if shown == include.limit %}{% break %}{% endif %}
   {%- endfor %}
 {%- endcapture -%}
-{%- if shown > 0 -%}
-<div class="thought-cards">{{ cards }}</div>
-{%- else %}
+{%- if shown == 0 %}
 <p class="thought-empty">{{ t.thoughts_empty }}</p>
+{%- elsif include.booklet and shown > 1 %}
+<div class="thought-book" data-thought-book role="group" aria-label="{{ t.thoughts_title | escape }}">
+  <div class="thought-cards">
+    {{ cards }}
+    <button class="thought-book-turn" type="button" aria-label="{{ t.thoughts_turn | escape }}" hidden></button>
+  </div>
+  <p class="thought-book-status mono" role="status" hidden></p>
+</div>
+<script src="{{ '/assets/js/thought-book.js' | relative_url }}" defer></script>
+{%- else %}
+<div class="thought-cards">{{ cards }}</div>
 {%- endif %}
