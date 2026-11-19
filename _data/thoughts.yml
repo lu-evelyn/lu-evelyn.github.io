@@ -1,2 +1,366 @@
 # 每项包含 date（YYYY-MM-DD）、zh（原文），可选 en（英文译文）。
-[]
+# 英文为翻译初稿，供审阅修改。同一天可有多条；按时间从早到晚排列，站点按日期倒序展示。
+
+- date: "2025-12-28"
+  zh: |
+    咱就是说蜜雪的袋子能不能设计得更好看一些😂这审美实在有些难评😂😂😂
+  en: |
+    Can Mixue's bags be designed to look a little better? 😂 This aesthetic is honestly a bit hard to defend. 😂😂😂
+
+- date: "2025-12-29"
+  zh: |
+    CHATGPT 的 auto 模式和 thinking 模式差距还是蛮大的。我问了一个生物领域的问题，auto 模式回答的完全是错误的，thinking 模式是正确的。但 gemini 的 thinking 模式回答得更细致完善。
+  en: |
+    The gap between CHATGPT's auto mode and thinking mode is still pretty large. I asked a question in biology: auto mode gave a completely wrong answer, while thinking mode was correct. Gemini's thinking mode, though, answered in a more detailed and complete way.
+
+- date: "2025-12-31"
+  zh: |
+    小红书也上线 AI 功能了，右上角的 asknow，用了一下还不错👍
+  en: |
+    Xiaohongshu has also launched an AI feature, Asknow, in the upper-right corner. I tried it, and it's pretty good 👍
+
+- date: "2025-12-31"
+  zh: |
+    前两天刚听完 elsewhere 的这期播客，昨天就弹出了Manus被Meta收购的消息，只能说太🐮了！！未来东西大的竞争就是AI科技的竞争了。
+  en: |
+    I had just finished this episode of the elsewhere podcast a couple of days ago, and yesterday the news popped up that Meta is acquiring Manus. All I can say is: that's wild 🐮!! Going forward, the real competition between East and West will be the competition in AI technology.
+
+- date: "2025-12-31"
+  zh: |
+    宝哥星球里的一篇文章给我带来很大冲击。他说，
+
+    Business insider在10月份报道过一个数字，ChatGPT每天处理25亿条信息，按照当时7亿周活算，这组数据对应每个周活一周也就是25条，每天3-4条。所以重度用户每年2万条 message sent是全球1%，每年5千条也是全球1%。大多数订阅用户是没有高密度的知识工作处理量的。
+
+    所以现状就是，会用的人把AI当外挂，生产力直接拉开；但不会用的人因为习惯和工作流差距，还只是路人。这就是为什么Sam说，即便是模型只停留在现在的能力，被真正利用到的能力和任务还远落后于模型能力，这里有一个巨大的落地 GAP。
+  en: |
+    An article in Baoge's community hit me hard. He said:
+
+    Business Insider reported a figure in October: ChatGPT processes 2.5 billion messages a day. Against 700 million weekly active users at the time, that works out to about 25 messages per weekly active user per week, or 3–4 a day. So heavy users who send 20,000 messages a year are the top 1% globally, and even 5,000 a year is also the global top 1%. Most subscribers do not have a high-density volume of knowledge work.
+
+    So the current situation is this: people who know how to use AI treat it as a cheat code and pull far ahead in productivity; people who don't, because of habits and workflow gaps, are still just bystanders. That's why Sam says that even if the model stayed at today's capabilities, the abilities and tasks actually being put to use would still lag far behind what the model can do. There is a huge gap in getting it to land.
+
+- date: "2026-01-02"
+  zh: |
+    超级牛股需要扩张来拉动，扩张是好事 → 扩张有时候快过 EBITDA 增速，几个季度内的 ROIC 可能要下降 → 股价会被惩罚 → 投资带来的效果开始出现 → 下跌后的股价动量和 FCF 估值都支持未来更高的超额回报 → 重启上升通道又是一波猛涨 → 得到回报后公司信心满满，可能又要开启下一轮扩张，再次循环 学会利用这种循环范式的节奏，对我们在美国投资成长股是很有意义的。只要飞轮和长期逻辑没有破坏，因为这种节奏跌下来就不用太慌，反而是机会，要明白这是在几百只十倍股上都出现过的普遍规律。
+    from 宝哥
+  en: |
+    Super compounders need expansion to drive growth, and expansion is a good thing → expansion sometimes outruns EBITDA growth, and ROIC may decline for a few quarters → the stock gets punished → the effects of the investment start to show up → after the decline, both price momentum and FCF valuation support higher excess returns ahead → the uptrend restarts, and another sharp rise follows → after being rewarded, the company is full of confidence and may start another round of expansion, and the cycle repeats. Learning to use the rhythm of this cyclical pattern is very meaningful for us when investing in U.S. growth stocks. As long as the flywheel and the long-term logic are not broken, a drop that comes from this rhythm is not something to panic about; it is an opportunity. This is a common pattern that has shown up in hundreds of ten-baggers.
+    from 宝哥
+
+- date: "2026-01-03"
+  zh: |
+    cha老师真的挺强的，他对MBTI的分析我觉得超过了我读过的所有官方解析。强烈建议大家都去试一试！
+  en: |
+    Teacher cha is really strong. I think his MBTI analysis goes beyond every official explanation I have read. I strongly recommend that everyone give it a try!
+
+- date: "2026-01-08"
+  zh: |
+    AI 可以帮助我们学会我们想学的任何东西，前提是改变传统的学习方式。
+
+    传统学习路线，是自下而上的。先学 A，再学 B，最后学 C，然后你才能解决真正的问题。
+
+    AI时代的学习路径，应该是自上而下的。发现了问题D，要用到ABC的其中一部分，就用AI去学；ABC 不需要全部学会，用多少就学多少，剩下的以后遇到问题再学。
+
+    这种以终为始的学习方式，从问题出发，以解决问题为导向，让AI作为你的老师、同学、伙伴帮助你学习，会把学习效率提高上万倍。
+
+    推荐 3 个 AI 工具：NotebookLM, chatgpt, notion。
+
+    NotebookLM：只做“事实层”。把 PDF、行业报告、论文、深度文章扔进去，让他帮你整理：确定性结论、不确定性 / 争议、隐含假设、风险与边界，把事实搞清楚。
+
+    ChatGPT：把事实“变成判断”。把 NotebookLM 的输出复制进 ChatGPT，让他帮你生成抽象出来的逻辑、判断。
+
+    Notion：把“判断”变成长期资产，生成数据库。把 chatgpt生成的判断存下来，notionAI 可以帮你自动生成 memo，这会帮你构建一份可回溯、可复盘的个人数据资产。
+  en: |
+    AI can help us learn anything we want to learn, provided we change the traditional way of learning.
+
+    The traditional path is bottom-up. You learn A first, then B, and finally C, and only then can you solve a real problem.
+
+    The learning path in the AI era should be top-down. When you discover problem D and need part of A, B, or C, you use AI to learn it. You don't need to master all of A, B, and C; learn as much as you need, and learn the rest later, when a problem calls for it.
+
+    This way of beginning with the end in mind starts from the problem and is oriented toward solving it. Letting AI be your teacher, classmate, and partner in learning can raise learning efficiency by orders of magnitude.
+
+    Three AI tools I recommend: NotebookLM, chatgpt, and notion.
+
+    NotebookLM: it only does the "fact layer." Throw in PDFs, industry reports, papers, and in-depth articles, and let it help you sort out settled conclusions, uncertainties / disputes, implicit assumptions, and risks and boundaries, so the facts are clear.
+
+    ChatGPT: it turns facts "into judgments." Copy NotebookLM's output into ChatGPT and let it help you generate abstracted logic and judgments.
+
+    Notion: it turns "judgments" into a long-term asset and builds a database. Store the judgments ChatGPT generates; Notion AI can help you auto-generate memos. This helps you build a personal data asset you can trace and review.
+
+- date: "2026-01-10"
+  zh: |
+    在42章经对谈Monica创始人肖宏的播客里，有这样一段对话，给我很深的触动。
+
+    曲凯老师说，“你们做的是一个插件，会不会担心其他插件的竞争？”
+
+    肖宏说，“我不是从竞争的角度来看待自己的产品的。贝索斯曾经说过一段话我很认同，我们是通过观察竞争对手在做什么，来思考我们能为客户更多地做什么，这是我们看待竞争对手的方式。如果发现自己不能够为客户提供更多的服务，不能够满足客户更多的需求，那这个产品本身就应该消亡，这就是自然规律。”
+
+    我觉得这是一种很强大的心态，是一种不会陷入FOMO的、不会陷入对比内耗中的心态，是一种更积极、更主动地面对竞争的心态。
+
+    未来的时代是一个巨变的时代，AI 改变了生产力，让很多事情的门槛大幅降低。从某种意义上讲，是一个竞争更激烈、更高维的时代。就像肖宏说的，发现真实的需求，去解决问题，做你自己，才是稳定的生存心态。
+  en: |
+    In the 42Chapter interview podcast with Monica founder Xiao Hong, there was an exchange that moved me deeply.
+
+    Teacher Qu Kai asked, "You're building a plugin. Do you worry about competition from other plugins?"
+
+    Xiao Hong said, "I don't look at our product from the angle of competition. Bezos once said something I strongly agree with: we look at what competitors are doing in order to think about what more we can do for customers. That is how we look at competitors. If we find that we can no longer provide more service to customers, or meet more of their needs, then the product itself should disappear. That is a law of nature."
+
+    I think this is a very strong mindset: one that does not fall into FOMO, does not get consumed by comparison, and faces competition in a more active and constructive way.
+
+    The era ahead is one of enormous change. AI has changed productivity and lowered the barrier to many things. In a sense, it is a more intense, higher-dimensional era of competition. As Xiao Hong said, finding real needs, solving problems, and being yourself is the stable mindset for staying in the game.
+
+- date: "2026-01-12"
+  zh: |
+    《明朝那些事儿》：这个世界上凡是存在的东西，都具有合理性，否则它就不会诞生。
+  en: |
+    Those Stories of the Ming Dynasty: Everything that exists in this world has its reasons for existing; otherwise it would never have come into being.
+
+- date: "2026-03-10"
+  zh: |
+    练习不做选择的生活。
+
+    做选择是一件极其消耗心力的事。
+
+    我对自己的心力消耗是很敏感的。我发现当我要高频地做判断、做选择的时候，精力会快速消耗，很容易疲惫、烦躁不安。
+
+    所以做交易是很累的，因为价格数字在不停变化，每天都需要做大量的判断，决定交易方向和数量。生活里也是一样，当我刷外卖软件而不知道吃什么的时候，会觉得很心累，因为我在做刻意的选择。
+
+    我更相信其实我们每个人的生活都是被命运的大手推着走的，顺势是更好的选择。
+
+    当我们停在那儿去选的时候，实际上是在做主动的、强制性的动作。不做选择的生活就是被生活推着走，自然而然的很多事情就发生了。
+
+    而当我们能够坦然顺势，也就更容易达到自由的状态。
+
+    我常常想，一个人真正的自由是什么？很长一段时间，我觉得自由是我想去哪就能去哪，想吃什么就能吃到什么，这就是自由。现在我慢慢理解到，自由其实是无论处于什么样的环境，发生什么事情，都可以，我都能接受。我只是在顺着走，不做刻意的选择。我觉得这是更舒展、平静的状态，是深层次的自由。
+  en: |
+    Practicing a life without making choices.
+
+    Making choices is something that consumes an enormous amount of mental energy.
+
+    I am very sensitive to the drain on my mental energy. I have found that when I have to make judgments and choices at a high frequency, my energy is used up quickly, and I easily become tired, irritable, and restless.
+
+    That is why trading is so exhausting: the numbers keep changing, and every day you have to make a large number of judgments about direction and size. Life is the same. When I am scrolling a food-delivery app and do not know what to eat, I feel drained, because I am making deliberate choices.
+
+    I am more inclined to believe that each of our lives is being pushed along by the large hand of fate, and that going with the flow is the better choice.
+
+    When we stop there to choose, we are in fact making an active, forced move. A life without making choices means being carried along by life, and many things happen of their own accord.
+
+    And when we can accept going with the flow, it becomes easier to reach a state of freedom.
+
+    I often wonder what a person's true freedom is. For a long time, I thought freedom meant being able to go wherever I wanted and eat whatever I wanted. That, I thought, was freedom. Now I am slowly coming to understand that freedom is actually this: whatever environment I am in, and whatever happens, it is all right, and I can accept it. I am simply going along, without making deliberate choices. I think this is a more relaxed and calm state, a deeper kind of freedom.
+
+- date: "2026-03-12"
+  zh: |
+    人生其实无非就是每天看着太阳升起和落下，好好吃点东西，然后享受思维的乐趣就够了。
+
+    人的内啡肽分泌，很多时候依赖于思维的激荡。比如说，你提出一个别人都没有提出过的观点，写出别人都没有表达过的文字，或者你在某方面的认知超越了大多数人，这些都会带来成就感，带来内啡肽。
+
+    所以，做投资和写东西，我觉得会是伴随我一生的事情。其他的，其实就真的是每天看着太阳升起和落下，然后好好吃点东西——真的挺好的。一个平静、舒展的生活就是最好的状态了。
+  en: |
+    Life, in the end, is nothing more than watching the sun rise and set each day, eating something proper, and enjoying the pleasure of thinking. That is enough.
+
+    The release of endorphins often depends on the stirring of thought. For example, putting forward a view no one else has proposed, writing words no one else has expressed, or seeing further than most people in some area: all of these bring a sense of accomplishment, and with it, endorphins.
+
+    So I think investing and writing will be with me for life. As for the rest, it really is just watching the sun rise and set each day, and eating something proper — and that is genuinely good. A calm, unhurried life is the best state of all.
+
+- date: "2026-11-02"
+  zh: |
+    有的时候觉得挺神奇的，人的想法是会变的，随着你做的事、所处的环境、时间的推移，都会不一样。之前总觉得要趁着年轻多去远的地方，防止以后年纪大了去不了。但现在觉得，为了能陪孩子、适应他的节奏，更需要做的是好好锻炼身体，恢复健身，把肠胃养好，让自己衰老得慢一些、肌肉多一些，支撑自己走更远、更长的路。
+  en: |
+    Sometimes it feels quite remarkable: a person's ideas do change, along with what you do, the environment you are in, and the passage of time. I used to feel I should go to faraway places while I was still young, in case I could no longer go when I was older. But now I feel that, in order to be with my child and adapt to his rhythm, what I need even more is to exercise properly, get back to fitness, and take care of my digestion, so that I age more slowly, keep more muscle, and can support myself on a longer road.
+
+- date: "2026-11-03"
+  zh: |
+    很多时候知易行难。
+
+    因为人性不易逆。我们往往更容易相信自己当下的“感觉”，而不是客观的统计数据。
+
+    但回头看，那些让我们痛苦难受的交易，往往结果不坏。
+  en: |
+    Knowing is often easy; doing is hard.
+
+    Human nature is not easily reversed. We tend to trust our “feeling” in the moment more than objective statistics.
+
+    But looking back, the trades that made us suffer often did not turn out badly.
+
+- date: "2026-11-06"
+  zh: |
+    “三四岁的小孩根本不会记得你带他去过哪儿。
+
+    但那段时间的经历，你记得。
+
+    其实这对你自己的意义更大——以后回想起来，蓝天下孩子奔跑的小小身影，会觉得很幸福吧。”
+    所以，似乎我之前在安排出行的时候把顺序搞反了。我会一直当成"我带他出去玩"，所以行程处处迁就孩子的作息和需求；如果换成"他陪我出去玩"，那安排就可以适当按照我的喜好来，他负责陪着我。
+
+    哇，要实践一下，想想就很开心😊
+  en: |
+    “A three- or four-year-old will not remember where you took him.
+
+    But you will remember what those days were like.
+
+    In fact, this means more to you — later, when you look back at that small figure running under a blue sky, you will probably feel very happy.”
+    So it seems I had the order backward when I planned trips. I had always treated it as "I am taking him out to play," so the itinerary gave way at every turn to the child's schedule and needs. If I switch it to "he is coming along with me," then the plan can follow my preferences a little more, and he is there to keep me company.
+
+    Wow, I want to try this. Just thinking about it makes me happy 😊
+
+- date: "2026-11-09"
+  zh: |
+    最近在做 AI 相关的项目的时候，更深的领会到人是不擅长做 0 到 1 的，我们更擅长做的是 1 到 100。
+
+    所以很多时候我们给 AI 交代一个事情，交代不清楚是正常的。因为我们并不清楚我们真正想要的是什么。
+
+    通常我们让它帮我们做一个东西，它出来一个初稿，我们在改的过程当中才会更加清晰我们的需求。
+  en: |
+    While working on AI-related projects recently, I have come to see more deeply that people are not very good at going from 0 to 1. What we are better at is going from 1 to 100.
+
+    So when we brief AI on something, it is normal not to brief it clearly. We ourselves do not really know what we want.
+
+    Usually we ask it to make something, it produces a first draft, and only in the process of revising do our needs become clearer.
+
+- date: "2026-11-11"
+  zh: |
+    今天早晨在地铁上看 Fable 5.2 的测评，数字生命卡兹克用它做了一个 ChatGPT 发布四周年的视频。
+
+    最后那一幕是 Happy fourth birthday, GPT，然后屏幕上放出了一个小小的烟花。那一刻我突然有点感动。那枚烟花也放在了我心里。
+
+    这个视频审美非常在线，甚至有了触达人心的力量。
+
+    AI 越来越强大，能做的事情越来越多，我们想做的事情能够实现的部分也会越来越多。
+
+    这真是一个神奇的时代。
+  en: |
+    This morning on the subway I watched a review of Fable 5.2. The digital being Kazk used it to make a video for ChatGPT's fourth anniversary.
+
+    The last scene was "Happy fourth birthday, GPT," and then a little firework went off on the screen. In that moment I was suddenly a bit moved. That firework went off in my heart as well.
+
+    The video's aesthetic is very sharp; it even has the power to reach people.
+
+    AI is getting stronger and can do more and more, and more of what we want to do will become possible.
+
+    This really is a wondrous time.
+
+- date: "2026-11-11"
+  zh: |
+    看了《遥远的救世主》和《活着》这两本书和剧，觉得书都比剧精彩很多。
+
+    我决定以后有书的作品就看书弃剧了。
+  en: |
+    I watched and read The Distant Savior and To Live, both the books and the series, and I found the books far more compelling than the adaptations.
+
+    I have decided that, from now on, when a work exists as a book, I will read the book and skip the series.
+
+- date: "2026-11-11"
+  zh: |
+    Flomo 的今日新知功能不错，对我很有启发。
+
+    我之前记过一条笔记：在 AI 时代执行被外包，因此执行的价值在快速贬值。但人类其实很多真正高价值的东西，正是在执行当中训练出来的，所以这就形成了悖论。
+
+    昨天今日新知推送给我一个解释，叫做波兰尼悖论。它是匈牙利哲学家波兰尼提出的。他说我们知道的比我们能写出来的要多得多。
+
+    以骑自行车为例，如何骑好自行车可以用一大段话来形容，要怎样把握平衡，怎样上车，怎样下车。但即使你把它背下来，你还是不会骑。只有在骑的过程当中不断去尝试，自然就会了。
+
+    这说明我们知道的远远比我们能写下来的多得多。
+
+    我们能写下来的那一部分是可以外包给 AI 去做的，而那些我们知道但不能够写下来的部分依然是我们的核心价值所在。
+  en: |
+    Flomo's "new knowledge today" feature is quite good, and I have found it inspiring.
+
+    I had earlier written a note: in the AI era, execution is being outsourced, so the value of execution is depreciating quickly. But many of the truly high-value things about being human are trained precisely in the act of executing. That is the paradox.
+
+    Yesterday, "new knowledge today" pushed me an explanation called Polanyi's paradox, put forward by the Hungarian philosopher Polanyi. He said that we know much more than we can write down.
+
+    Take riding a bicycle. How to ride well can be described in a long paragraph: how to keep your balance, how to get on, how to get off. But even if you memorize it, you still cannot ride. Only by trying again and again in the act of riding do you naturally learn.
+
+    This shows that what we know is far more than what we can write down.
+
+    The part we can write down can be outsourced to AI. The part we know but cannot write down is still where our core value lies.
+
+- date: "2026-11-12"
+  zh: |
+    好的作品的魅力往往是可以改变人的一个小小的想法。
+
+    尽管这个世界其实一直都没有变，变的只是我们每个人心中的想法而已。
+
+    但当你的想法产生变化，你眼中的世界就会随之改变。
+  en: |
+    The power of a good work often lies in its ability to change one small idea in a person.
+
+    The world itself has not really changed; what changes is only the idea in each of our minds.
+
+    But when your idea changes, the world you see changes with it.
+
+- date: "2026-11-12"
+  zh: |
+    十年前，谈过三年的异地恋。当时觉得还好，一个月见一次，也可以接受。
+
+    现在，当社会关系和家庭关系都更复杂后，异地的时候会觉得情感连接很薄弱。
+
+    时间错位，空间错位，两个人的节奏很难有一致的区间。
+
+    面对手机视频，很多时候打算说的话突然就不想说了。
+
+    人还是需要很多「在身边」的爱的。
+  en: |
+    Ten years ago, I was in a three-year long-distance relationship. At the time it felt fine. Meeting once a month was acceptable.
+
+    Now, with social and family relationships more complicated, being apart makes the emotional connection feel very thin.
+
+    Time is out of sync, space is out of sync, and it is hard for two people's rhythms to have a shared interval.
+
+    Facing a video call, I often suddenly no longer want to say what I had planned to say.
+
+    People still need a great deal of love that is "right here."
+
+- date: "2026-11-13"
+  zh: |
+    善意都是溢出去的，只有你自己足够了才会分给别人，就像爱一样。
+
+    当自己处于舒适的状态，会有更包容和开放的心态，也就自然而然愿意给别人更多善意。
+
+    而当自己压力很大、比较紧绷的时候，是没有办法做到的，整个人会封闭。
+  en: |
+    Kindness is something that overflows. Only when you yourself have enough will you share it with others, just like love.
+
+    When I am in a comfortable state, I have a more generous and open mindset, and I naturally want to offer others more kindness.
+
+    When I am under a lot of pressure and wound tight, I cannot do it. The whole person closes up.
+
+- date: "2026-11-14"
+  zh: |
+    昨天去买戒指，和店员聊天，她说珠宝是一种缘分。
+
+    虽然我知道这是一种营销话术，但是那个时候还是会觉得有一点触动。
+
+    其实任何东西都是缘分吧，无论是人还是事物都是一样的。
+
+    所以不要强求，缘分到了自然就可以好好的遇见，缘分没到就算了，就是如此。
+
+    所以珍惜每一段遇见，无论是遇见人，还是遇见事，还是遇见物。
+
+    遇上了，希望自己能在一个比较好的状态里，能够溢出爱和善意，好好对待他们吧。
+  en: |
+    I went to buy a ring yesterday and talked with the salesperson. She said jewelry is a matter of fate.
+
+    I knew this was a sales line, but in that moment I still felt a little moved.
+
+    Perhaps everything is a matter of fate, whether it is a person or a thing. It is the same.
+
+    So there is no need to force it. When the timing is right, you will meet in a good way; if it is not right, let it go. That is all.
+
+    So treasure every meeting, whether you meet a person, a matter, or a thing.
+
+    When you do meet them, I hope I can be in a reasonably good state, able to overflow with love and kindness, and treat them well.
+
+- date: "2026-11-17"
+  zh: |
+    你只能拥有你配得上的东西。
+
+    所有身外之物只会跟内在相匹配的人在一起，这个“内在”包括品德、修为、认知、知识，以及各种内在能量的溢出。
+
+    「内在能量的溢出」，太妙了。
+  en: |
+    You can only have what you are worthy of.
+
+    Everything outside a person stays only with someone whose inner life matches it. That "inner life" includes character, cultivation, understanding, knowledge, and the overflow of all kinds of inner energy.
+
+    "The overflow of inner energy." That is beautifully put.
