@@ -72,7 +72,7 @@ zh:
     ai: { name: AI, desc: 用 AI 搭建工作、生活及个人成长的各类系统，构建自己的第二大脑 }
     investing: { name: 投资, desc: 资产配置的认知、框架与反例 }
     education: { name: 教育, desc: AI 时代如何陪伴孩子成长 }
-    growth: { name: 个人成长, desc: 学习、复盘，建立持续探索、深度连接的生活体系 }
+    growth: { name: 探索, desc: 触碰、链接更广阔的世界 }
 
 en:
   site_title: Allocating the Future
@@ -147,4 +147,4 @@ en:
     ai: { name: AI, desc: "Building AI systems for work, life, and personal growth, a second brain of my own" }
     investing: { name: Investing, desc: "Asset allocation: frameworks, counterexamples, failure modes" }
     education: { name: Education, desc: Growing up alongside our kids in the age of AI }
-    growth: { name: Growth, desc: "Learning, reflection, and a life built on ongoing exploration and deep connection" }
+    growth: { name: Exploration, desc: "Reaching out and connecting with a wider world" }
