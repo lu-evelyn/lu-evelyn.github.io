@@ -3,6 +3,7 @@ title: "Coordinated R&D Programs and the Creation of New Industries"
 date: 2026-11-20
 lang: zh
 section: growth
+translation: /posts/2026/11/coordinated-rd-programs-and-new-industries-en/
 kind: deepread
 source:
   author: "Daniel P. Gross 与 Maria P. Roche"

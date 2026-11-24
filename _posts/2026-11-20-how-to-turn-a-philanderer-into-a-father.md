@@ -3,6 +3,7 @@ title: "How to Turn a Philanderer Into a Father"
 date: 2026-11-20
 lang: zh
 section: growth
+translation: /posts/2026/11/how-to-turn-a-philanderer-into-a-father-en/
 kind: deepread
 source:
   author: "Asif A. Ghazanfar"

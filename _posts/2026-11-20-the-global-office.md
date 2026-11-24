@@ -3,6 +3,7 @@ title: "The Global Office: How Globalisation's Frontier is Shifting from Factori
 date: 2026-11-20
 lang: zh
 section: growth
+translation: /posts/2026/11/the-global-office-en/
 kind: deepread
 source:
   author: "Richard Baldwin"

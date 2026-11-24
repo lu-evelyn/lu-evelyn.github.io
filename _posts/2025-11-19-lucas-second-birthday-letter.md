@@ -3,6 +3,7 @@ title: "写给 Lucas 的两岁生日信"
 date: 2025-11-19
 lang: zh
 section: education
+translation: /posts/2025/11/letter-to-lucas-on-his-second-birthday/
 ---
 
 Lucas，

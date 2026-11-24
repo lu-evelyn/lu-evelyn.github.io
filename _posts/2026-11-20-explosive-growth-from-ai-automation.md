@@ -3,6 +3,7 @@ title: "Explosive growth from AI automation: A review of the arguments"
 date: 2026-11-20
 lang: zh
 section: ai
+translation: /posts/2026/11/explosive-growth-from-ai-automation-en/
 kind: deepread
 source:
   author: "Ege Erdil 与 Tamay Besiroglu"

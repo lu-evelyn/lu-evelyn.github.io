@@ -3,6 +3,7 @@ title: "写给 Lucas 的三岁生日信"
 date: 2026-11-19
 lang: zh
 section: education
+translation: /posts/2026/11/letter-to-lucas-on-his-third-birthday/
 ---
 
 Lucas，
