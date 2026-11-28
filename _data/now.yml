@@ -1,13 +1,23 @@
 # 首页“此刻”卡片。留空的行不显示。改完记得更新 updated。
 # 素材只用 Evelyn 本人的话。「在想」每次由 Evelyn 指定。
-updated: 2026-11-19
+updated: 2026-11-28
 zh:
   building: 自己的知识库
-  thinking: 内在能量的溢出
+  thinking: |-
+    感受，感性的东西可能才是更重要的，而不是我们过去一直强调的理性脑。
+
+    直觉，感受，故事，这些是很珍贵的东西。
+
+    在 AI时代，更是如此。
   reading: 《遥远的救世主》，《活着》
   writing: ""
 en:
   building: My own knowledge base
-  thinking: The overflow of inner energy
+  thinking: |-
+    Feelings, and the things we take in through feeling, may matter more than the rational mind we've always emphasized.
+
+    Intuition, feelings, stories. These are precious things.
+
+    Even more so in the age of AI.
   reading: The Distant Savior by Dou Dou; To Live by Yu Hua
   writing: ""
